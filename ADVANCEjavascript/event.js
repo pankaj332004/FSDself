@@ -170,18 +170,75 @@
 //change event :- the change event occurs when the value of an element has been changed(only works on <input>,<textarea> and <select> elements)
 //input event :- the input event fire when the value of an <input>,<select>,or<textarea> element has been changed
 
-let form = document.querySelector("form");
+// let form = document.querySelector("form");
 
-form.addEventListener("submit", function(event){
-    event.preventDefault();
-});
+// form.addEventListener("submit", function(event){
+//     event.preventDefault();
+// });
 
-let user = document.querySelector("#user");
-user.addEventListener("change",function(){
-    console.log("change event");
-    console.log("final value",this.value);
-});
-user.addEventListener("input",function(){
-    console.log("input event");
-    console.log("final value",this.value);
-});
+// let user = document.querySelector("#user");
+
+// user.addEventListener("change",function(){
+//     console.log("change event");
+//     console.log("final value",this.value);
+// });
+
+// user.addEventListener("input",function(){
+//     console.log("input event");
+//     console.log("final value",this.value);
+// });
+
+// let div = document.querySelector("div");
+// let ul = document.querySelector("ul");
+// let li = document.querySelectorAll("li");
+// div.addEventListener("click",function(){
+//     console.log("div was added");
+// })
+
+// ul.addEventListener("click",function(event){
+//     event.stopPropagation();
+//     console.log("ul was added");
+// })
+// for(l of li){
+//     li.addEventListener("click",function(event){
+//         event.stopPropagation();
+//         console.log("li was added");
+//     })
+// }
+
+// TODO game
+ 
+// let btn = document.querySelector("button");
+// let ul = document.querySelector("ul");
+// let inp = document.querySelector("input");
+
+// btn.addEventListener("click",function(){
+//     let item = document.createElement("li");
+//     item.innerText = inp.value;
+
+//     let delbtn = document.createElement("button");
+//     delbtn.innerText = "delete";
+//     delbtn.classList.add("delete");
+
+//     item.appendChild(delbtn);
+
+//     ul.appendChild(item);
+//     inp.value="";
+// });
+
+// ul.addEventListener("click",function(event){
+//     if(event.target.nodeName=="BUTTON"){
+//         let listItem = event.target.parentElement;
+//         listItem.remove();
+//         console.log("DELETE");
+//     }
+// })
+
+// let delbtns = document.querySelectorAll(".delete");
+// for(delbtn of delbtns){
+//     delbtn.addEventListener("click",function(){
+//         let para=this.parentElement;
+//         console.log(para);
+//         para.remove();
+//     });
+// } 
